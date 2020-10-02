@@ -1,0 +1,6 @@
+setup.py
+src/computerdatabase.egg-info/PKG-INFO
+src/computerdatabase.egg-info/SOURCES.txt
+src/computerdatabase.egg-info/dependency_links.txt
+src/computerdatabase.egg-info/requires.txt
+src/computerdatabase.egg-info/top_level.txt
