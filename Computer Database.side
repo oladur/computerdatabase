@@ -1,0 +1,565 @@
+{
+  "id": "60873b2e-92c6-4754-bbad-9e5ac148ff83",
+  "version": "2.0",
+  "name": "Computer Database",
+  "url": "https://computer-database.gatling.io",
+  "tests": [{
+    "id": "220cc1b1-427f-471c-b421-0bff1906e866",
+    "name": "Delete An Existing Computer Name ",
+    "commands": [{
+      "id": "5630cb6b-a339-4ec1-b982-e9fc602a253a",
+      "comment": "",
+      "command": "open",
+      "target": "/computers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0dc935e-2082-40f6-b5d0-22f9fb9b8985",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x834",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98cf9ac8-206f-4558-b12b-e7da733bba06",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Acer Iconia",
+      "targets": [
+        ["linkText=Acer Iconia", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Acer Iconia')]", "xpath:link"],
+        ["xpath=//section[@id='main']/table/tbody/tr[4]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/computers/543')]", "xpath:href"],
+        ["xpath=//tr[4]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Acer Iconia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d14089a9-7105-4852-bd58-332dfb2dfdaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.danger",
+      "targets": [
+        ["css=.danger", "css:finder"],
+        ["xpath=//input[@value='Delete this computer']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1454dec-382a-4aa5-bf2e-61199b8c821a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Acer Iconia",
+      "targets": [
+        ["linkText=Acer Iconia", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Acer Iconia')]", "xpath:link"],
+        ["xpath=//section[@id='main']/table/tbody/tr[4]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/computers/543')]", "xpath:href"],
+        ["xpath=//tr[4]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Acer Iconia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97a40f00-e7b8-4820-a8ff-611af1677e78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.danger",
+      "targets": [
+        ["css=.danger", "css:finder"],
+        ["xpath=//input[@value='Delete this computer']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd976c6d-a91c-4cb9-b602-27fbb17f82e5",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//a[contains(text(),'Acer Iconia')]",
+      "targets": [
+        ["linkText=Acer Iconia", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Acer Iconia')]", "xpath:link"],
+        ["xpath=//section[@id='main']/table/tbody/tr[4]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/computers/543')]", "xpath:href"],
+        ["xpath=//tr[4]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Acer Iconia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "df74cd97-aa21-41b2-a284-f05e58b56e73",
+    "name": "Add A New Computer",
+    "commands": [{
+      "id": "bf60ac72-77a9-4bdf-bb30-d5e5aac902a2",
+      "comment": "",
+      "command": "open",
+      "target": "/computers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efee8476-6c11-4633-902c-b6b2fdc5edf7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x834",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2362f80-ffee-4b5b-af4a-67e8dd645aac",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["linkText=Add a new computer", "linkText"],
+        ["css=#add", "css:finder"],
+        ["xpath=//a[contains(text(),'Add a new computer')]", "xpath:link"],
+        ["xpath=//a[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='actions']/form/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/computers/new')]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add a new computer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc4321c2-c0cf-4ad2-bbc1-0900163a1505",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1fd567f-c874-4a5f-93e8-d960e97398ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8655148a-0ea2-4e9c-a01b-54d8c925bda3",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "AZAR"
+    }, {
+      "id": "19fc7db1-5540-426b-9b7c-fbff90934996",
+      "comment": "",
+      "command": "click",
+      "target": "id=introduced",
+      "targets": [
+        ["id=introduced", "id"],
+        ["name=introduced", "name"],
+        ["css=#introduced", "css:finder"],
+        ["xpath=//input[@id='introduced']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9f53548-c311-4d69-93e0-c14c2d3385e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=introduced",
+      "targets": [
+        ["id=introduced", "id"],
+        ["name=introduced", "name"],
+        ["css=#introduced", "css:finder"],
+        ["xpath=//input[@id='introduced']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2019-01-09"
+    }, {
+      "id": "48c82810-13ab-47d8-8106-8177614c55af",
+      "comment": "",
+      "command": "click",
+      "target": "id=discontinued",
+      "targets": [
+        ["id=discontinued", "id"],
+        ["name=discontinued", "name"],
+        ["css=#discontinued", "css:finder"],
+        ["xpath=//input[@id='discontinued']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ba74aa9-b9ff-46c4-b2a9-778724014b7e",
+      "comment": "",
+      "command": "type",
+      "target": "id=discontinued",
+      "targets": [
+        ["id=discontinued", "id"],
+        ["name=discontinued", "name"],
+        ["css=#discontinued", "css:finder"],
+        ["xpath=//input[@id='discontinued']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2020-10-10"
+    }, {
+      "id": "fd179149-a3c0-490a-9672-113d9bd52f85",
+      "comment": "",
+      "command": "type",
+      "target": "id=discontinued",
+      "targets": [
+        ["id=discontinued", "id"],
+        ["name=discontinued", "name"],
+        ["css=#discontinued", "css:finder"],
+        ["xpath=//input[@id='discontinued']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2020-10-11"
+    }, {
+      "id": "d53ef90a-8862-40f1-9e6d-577cabd6b2dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=company",
+      "targets": [
+        ["id=company", "id"],
+        ["name=company", "name"],
+        ["css=#company", "css:finder"],
+        ["xpath=//select[@id='company']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[4]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ea3a035-84af-4505-9d56-dda4ffe6366c",
+      "comment": "",
+      "command": "select",
+      "target": "id=company",
+      "targets": [],
+      "value": "label=RCA"
+    }, {
+      "id": "10392d56-035b-45cb-a2f8-04ab7f7a5a2a",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.primary",
+      "targets": [
+        ["css=.primary", "css:finder"],
+        ["xpath=//input[@value='Create this computer']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "39,11"
+    }, {
+      "id": "e4d05c73-0854-4472-9d51-7894079c679c",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.primary",
+      "targets": [
+        ["css=.primary", "css:finder"],
+        ["xpath=//input[@value='Create this computer']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "39,11"
+    }, {
+      "id": "3d0df917-0710-4e06-91ed-d69e034a49ed",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.primary",
+      "targets": [
+        ["css=.primary", "css:finder"],
+        ["xpath=//input[@value='Create this computer']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "39,11"
+    }, {
+      "id": "a7b9f3d7-1b06-44a3-9335-b8da22d96ef5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primary",
+      "targets": [
+        ["css=.primary", "css:finder"],
+        ["xpath=//input[@value='Create this computer']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c2ac5ab-661a-4653-a60e-3dd2c48afd93",
+      "comment": "Computer AZAR was added ",
+      "command": "assertConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "964efda2-bcf6-4b2b-be90-38da894a77e1",
+    "name": "Search for New Computer Added in FilterbyName Field",
+    "commands": [{
+      "id": "275ec25f-bba8-45b7-85ed-2b4f1e006971",
+      "comment": "",
+      "command": "open",
+      "target": "/computers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79b0e014-8071-4f1c-b00c-d458600060eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x834",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b76e8066-7d9d-484c-855f-c4402d36f3e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchbox",
+      "targets": [
+        ["id=searchbox", "id"],
+        ["name=f", "name"],
+        ["css=#searchbox", "css:finder"],
+        ["xpath=//input[@id='searchbox']", "xpath:attributes"],
+        ["xpath=//div[@id='actions']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a53a17df-938a-4f71-9060-24d6bad141ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchbox",
+      "targets": [
+        ["id=searchbox", "id"],
+        ["name=f", "name"],
+        ["css=#searchbox", "css:finder"],
+        ["xpath=//input[@id='searchbox']", "xpath:attributes"],
+        ["xpath=//div[@id='actions']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "AZAR"
+    }, {
+      "id": "ab62b87a-160c-47c7-9d9a-e97fa516fb2c",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchsubmit",
+      "targets": [
+        ["id=searchsubmit", "id"],
+        ["css=#searchsubmit", "css:finder"],
+        ["xpath=//input[@id='searchsubmit']", "xpath:attributes"],
+        ["xpath=//div[@id='actions']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32529e56-eec0-48ab-bf68-1a530b7889da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.well",
+      "targets": [
+        ["css=.well", "css:finder"],
+        ["xpath=//section[@id='main']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"],
+        ["xpath=//div[contains(.,'Nothing to display')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3933ba2-4960-4fc0-904c-c3e4436f8034",
+      "comment": "Result for AZAR search should be True ",
+      "command": "assertChecked",
+      "target": "css=.well",
+      "targets": [
+        ["css=.well", "css:finder"],
+        ["xpath=//section[@id='main']/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div[2]", "xpath:position"],
+        ["xpath=//div[contains(.,'Nothing to display')]", "xpath:innerText"]
+      ],
+      "value": "AZAR"
+    }]
+  }, {
+    "id": "aed0665a-2d13-4b33-963d-0b48c180bacf",
+    "name": "Verify that user can edit details of existing computers on database",
+    "commands": [{
+      "id": "bbcf7354-3636-48ee-b49b-86e28c0e7737",
+      "comment": "",
+      "command": "open",
+      "target": "/computers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a578b1c9-39de-44fe-a4fb-6662b4ba2339",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x834",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbac8b45-cf1a-4f3b-9441-92f31a0929be",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Acorn Electron",
+      "targets": [
+        ["linkText=Acorn Electron", "linkText"],
+        ["css=tr:nth-child(6) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Acorn Electron')]", "xpath:link"],
+        ["xpath=//section[@id='main']/table/tbody/tr[6]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/computers/418')]", "xpath:href"],
+        ["xpath=//tr[6]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Acorn Electron')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f86ba8e-717a-43ef-a627-3f51d69652bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset",
+      "targets": [
+        ["css=fieldset", "css:finder"],
+        ["xpath=//section[@id='main']/form/fieldset", "xpath:idRelative"],
+        ["xpath=//fieldset", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04dcedc1-52c0-4c37-be9d-284bc902cd1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=introduced",
+      "targets": [
+        ["id=introduced", "id"],
+        ["name=introduced", "name"],
+        ["css=#introduced", "css:finder"],
+        ["xpath=//input[@id='introduced']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1ddd5d0-fd03-4898-a993-533ebb9c8e6b",
+      "comment": "",
+      "command": "type",
+      "target": "id=introduced",
+      "targets": [
+        ["id=introduced", "id"],
+        ["name=introduced", "name"],
+        ["css=#introduced", "css:finder"],
+        ["xpath=//input[@id='introduced']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2019-01-09"
+    }, {
+      "id": "ad1fe7bb-d2ba-4d02-9dcb-9556f23f0640",
+      "comment": "",
+      "command": "click",
+      "target": "id=discontinued",
+      "targets": [
+        ["id=discontinued", "id"],
+        ["name=discontinued", "name"],
+        ["css=#discontinued", "css:finder"],
+        ["xpath=//input[@id='discontinued']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8ed513c-1835-4bc8-8077-02421750fca2",
+      "comment": "",
+      "command": "type",
+      "target": "id=discontinued",
+      "targets": [
+        ["id=discontinued", "id"],
+        ["name=discontinued", "name"],
+        ["css=#discontinued", "css:finder"],
+        ["xpath=//input[@id='discontinued']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2020-10-10"
+    }, {
+      "id": "44b35851-2c77-4601-89df-2c425dd2e365",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primary",
+      "targets": [
+        ["css=.primary", "css:finder"],
+        ["xpath=//input[@value='Save this computer']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82a10e41-1e0f-4da1-83e9-b909ca7d83fe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Acorn Electron",
+      "targets": [
+        ["linkText=Acorn Electron", "linkText"],
+        ["css=tr:nth-child(6) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Acorn Electron')]", "xpath:link"],
+        ["xpath=//section[@id='main']/table/tbody/tr[6]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/computers/418')]", "xpath:href"],
+        ["xpath=//tr[6]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Acorn Electron')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cec4efe4-4a6d-4f4e-8fe5-e67139e068c9",
+      "comment": "Verify that Introduced date is present ",
+      "command": "assertSelectedValue",
+      "target": "id=introduced",
+      "targets": [
+        ["id=introduced", "id"],
+        ["name=introduced", "name"],
+        ["css=#introduced", "css:finder"],
+        ["xpath=//input[@id='introduced']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2019-01-09"
+    }, {
+      "id": "bfc404fa-d440-4c9b-afb4-60e885ee142c",
+      "comment": "Verify that new discountinued date is present",
+      "command": "assertSelectedValue",
+      "target": "id=discontinued",
+      "targets": [
+        ["id=discontinued", "id"],
+        ["name=discontinued", "name"],
+        ["css=#discontinued", "css:finder"],
+        ["xpath=//input[@id='discontinued']", "xpath:attributes"],
+        ["xpath=//section[@id='main']/form/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2020-10-10"
+    }]
+  }],
+  "suites": [{
+    "id": "5025168f-721f-425c-ac2e-473cdd853d11",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://computer-database.gatling.io/"],
+  "plugins": []
+}
